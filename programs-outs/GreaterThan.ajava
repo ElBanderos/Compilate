@@ -1,0 +1,18 @@
+class GreaterThan {
+
+    public static void main(String[] args) {
+        System.out.println(new GreaterThanPrint().isGreater(10, 20));
+    }
+
+}
+
+class GreaterThanPrint {
+
+    int isGreater(int numberOne, int numberTwo) {
+        int returnValue;
+        if (numberOne > numberTwo) returnValue = numberOne;
+        else returnValue = numberTwo;
+        return returnValue;
+    }
+
+}
